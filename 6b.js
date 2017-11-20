@@ -14,6 +14,10 @@ const suffixForNumber = (n) => (
   nToSuffix[n] || digitToSuffix[n % 10] || 'th'
 )
 
+// function suffixForNumber(n) {
+//   return nToSuffix[n] || digitToSuffix[n % 10] || 'th'
+// }
+
 const formatOrdinal = (n) => `${n}${suffixForNumber(n)}`
 
 for (let n = 1; n <= 25; n++) {
